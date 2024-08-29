@@ -3,8 +3,8 @@
 Add borders and page numbers to PDFs seamlessly.
 ---
 ## Requirements
-1. >pypdf2
-2. >reportlab
+1. `pypdf2`
+2. `reportlab`
 
 ---
 ## Usage
