@@ -3,8 +3,8 @@
 Add borders and page numbers to PDFs seamlessly.
 ---
 ## Requirements
-1. `pypdf2
-2. `reportlab
+1. >pypdf2
+2. >reportlab
 
 ---
 ## Usage
@@ -15,4 +15,4 @@ Add borders and page numbers to PDFs seamlessly.
 
 I couldn't find a tool on the internet that could add borders to the PDF pages seamlessly.
 Although some did offer drawing tools over PDF which was cumbersome, time taking, inconsistent and importantly stupid, 
-I decided to build my own tool.
+So I decided to build my own tool.
