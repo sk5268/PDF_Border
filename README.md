@@ -14,5 +14,5 @@ Add borders and page numbers to PDFs seamlessly.
 ## Background
 
 I couldn't find a tool on the internet that could add borders to the PDF pages seamlessly.
-Although some did offer drawing tools over PDF which was cumbersome, time taking, inconsistent and importantly stupid, 
+Although some did offer drawing tools over PDF which was cumbersome, time taking, inconsistent and more over, stupid. 
 So I decided to build my own tool.
