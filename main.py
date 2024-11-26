@@ -1,12 +1,12 @@
 import fitz
 
-def add_frame(input_pdf_path, output_pdf_path, frame_width=20, frame_color=(0, 0, 0)):
+def add_frame(input_pdf_path, output_pdf_path, frame_color=(0, 0, 0)):
 
     """
     Add a rectangle frame to each page of a PDF document.
     :param input_pdf_path: Path to the input PDF file
     :param output_pdf_path: Path to save the output PDF file
-    :param frame_width: Width of the frame in points (default: 20)
+    :param frame_padding: Width of the frame in points (default: 20)
     :param frame_color: RGB color of the frame (default: black)
     """
     
@@ -17,19 +17,21 @@ def add_frame(input_pdf_path, output_pdf_path, frame_width=20, frame_color=(0, 0
             page = doc[page_num]
             
             page_rect = page.rect
+
+            frame_padding = 20
             
             frame_rect = fitz.Rect(
-                frame_width,                    # left
-                frame_width,                    # top
-                page_rect.width - frame_width,  # right
-                page_rect.height - frame_width  # bottom
+                frame_padding,                    # left
+                frame_padding,                    # top
+                page_rect.width - frame_padding,  # right
+                page_rect.height - frame_padding  # bottom
             )
             
             page.draw_rect(
                 frame_rect,         # rectangle coordinates
-                color=frame_color,  # frame color
-                width=2,            # frame thickness
-                fill=None,          # no fill
+                color = frame_color,  # frame color
+                width = 2,            # frame thickness
+                fill = None,          # no fill
             )
         
         doc.save(output_pdf_path)
