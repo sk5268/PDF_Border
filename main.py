@@ -28,7 +28,7 @@ def add_frame(input_pdf_path, output_pdf_path, frame_color=(0, 0, 0)):
             )
             
             page.draw_rect(
-                frame_rect,         # rectangle coordinates
+                frame_rect,           # rectangle coordinates
                 color = frame_color,  # frame color
                 width = 2,            # frame thickness
                 fill = None,          # no fill
