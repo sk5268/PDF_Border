@@ -1,2 +1,1 @@
-PyPDF2
-reportlab
+pymupdf
