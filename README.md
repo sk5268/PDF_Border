@@ -4,6 +4,8 @@ Add borders and page numbers to PDFs seamlessly.
 ---
 ## Requirements
 `PyMuPDF`
+- `pip install pymupdf` 
+
 
 ---
 ## Usage
